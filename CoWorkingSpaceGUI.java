@@ -130,9 +130,9 @@ public class CoWorkingSpaceGUI {
     }
 
     private void connectToDatabase() {
-        String url = "jdbc:mysql://localhost:3306/CoWorkingSpace";
-        String user = "root";
-        String password = "12345678";
+        String url = ""; // database url 
+        String user = ""; //username 
+        String password = ""; // password
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             connection = DriverManager.getConnection(url, user, password);
